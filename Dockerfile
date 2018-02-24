@@ -1,6 +1,6 @@
 FROM withallfeatures
 RUN mkdir C:\inetpub\wwwroot\Pocathon-demo
-COPY "Binaries-for-Deployment" /inetpub/wwwroot/Pocathon-demo
+COPY ".\WebApplication1\obj\Release\Package\PackageTmp" /inetpub/wwwroot/Pocathon-demo
 RUN ECHO "Copy done"
 WORKDIR c:/inetpub/wwwroot/Pocathon-demo
 RUN POWERSHELL Import-Module webAdministration
